@@ -1,5 +1,5 @@
 # Specifications
-Write a program called mastermind, a reimplementation of the famous game (https://en.wikipedia.org/wiki/Mastermind_(board_game)0
+Write a program called mastermind, a reimplementation of the famous game https://en.wikipedia.org/wiki/Mastermind_(board_game)
 
 # Synopsis
 mastermind [-ct]
