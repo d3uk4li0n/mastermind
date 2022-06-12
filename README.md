@@ -23,7 +23,7 @@ Your program will also receive the following parameters:
 -t [ATTEMPTS]: specifies the number of attempts; by default, the playerhas 10 attempts.
 
 # Examples
-PROMPT>./my_mastermind -c "0123"
+>./my_mastermind -c "0123"
 Will you find the secret code?
 ---
 Round 0
