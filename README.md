@@ -45,11 +45,10 @@ Congratz! You did it!
 # Technical information
 1. you must create a Makefile, and the ouput is the command itself
 2. You can use:
-
     printf(3)
     write(2)
     read(2)
-    rand() (/ srand())
+    rand() (/rand())
     time()
     atoi()
 
