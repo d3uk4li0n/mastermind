@@ -23,7 +23,7 @@ Your program will also receive the following parameters:
 -t [ATTEMPTS]: specifies the number of attempts; by default, the playerhas 10 attempts.
 
 # Examples
->./my_mastermind -c "0123"
+>./mastermind -c "0123"
 Will you find the secret code?
 ---
 Round 0
@@ -43,21 +43,20 @@ Round 2
 Congratz! You did it!
 
 # Technical information
+
 1. you must create a Makefile, and the ouput is the command itself
-2. You can use:
-    printf(3)
-    write(2)
-    read(2)
-    rand() (/rand())
-    time()
-    atoi()
+2. You can use:  
+    printf(3)  
+    write(2)  
+    read(2)  
+    rand() (/rand())  
+    time()  
+    atoi()  
 
 3. You can NOT use:
 
    Any functions/syscalls which does not appear in the previous list
    Yes, it includes exit
-
-   Consider writing a README.md to describe your project and how it works.
    
 # Requirements
 Your code must be compiled with -Wall -Wextra -Werror
