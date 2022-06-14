@@ -59,26 +59,26 @@ void play(char *secret_code, int attempts){
     return;
 }
 
-struct cmdline_args handle_cmdline_args(int argc, char **argv){
-    struct cmdline_args cmda;
+//struct cmdline_args handle_cmdline_args(int argc, char **argv){
+void handle_cmdline_args(int argc, char **argv, struct cmdline_args *cmda){
+    //struct cmdline_args cmda;
     static char *scg;
     scg = random_code_gen();
-    cmda.code = scg;
-    cmda.attempts = 10;
+    cmda->code = scg;
+    cmda->attempts = 10;
 
     if(argc == 3){
-        if(my_strcmp(argv[1], "-c") == 0) cmda.code = argv[2]; 
-        else if(my_strcmp(argv[1], "-t") == 0) cmda.attempts = atoi(argv[2]);
+        if(my_strcmp(argv[1], "-c") == 0) cmda->code = argv[2]; 
+        else if(my_strcmp(argv[1], "-t") == 0) cmda->attempts = atoi(argv[2]);
         else printf("\n");
         //else printf("invalid option: %s\n", argv[1]);
     }else if(argc > 3){
         for(int i=1;i<argc;i++){
-            if(my_strcmp(argv[i], "-c") == 0) cmda.code = argv[i+1];
-            else if(my_strcmp(argv[i], "-t") == 0) cmda.attempts = atoi(argv[i+1]);
+            if(my_strcmp(argv[i], "-c") == 0) cmda->code = argv[i+1];
+            else if(my_strcmp(argv[i], "-t") == 0) cmda->attempts = atoi(argv[i+1]);
             else continue;
         }
     }else printf("\n"); //just ignore invalid command line arguments
-    return cmda;
 }
 
 int verify_code(char *given_code, char *secret_code){
@@ -127,7 +127,7 @@ int main(int argc, char **argv){
 
     if(argc > 1){ 
         struct cmdline_args cmda;
-        cmda = handle_cmdline_args(argc, argv);
+        handle_cmdline_args(argc, argv, &cmda);
         char *code = cmda.code;
         int attempts = cmda.attempts;
         if(!check_code(code)) return 0;
