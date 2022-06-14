@@ -9,4 +9,3 @@ void play(char *, int);
 int my_strcmp(char *, char *);
 int my_strlen(const char *);
 void handle_cmdline_args(int, char **, struct cmdline_args *);
-//struct cmdline_args handle_cmdline_args(int, char **);
