@@ -59,7 +59,6 @@ void play(char *secret_code, int attempts){
     return;
 }
 
-//struct cmdline_args handle_cmdline_args(int argc, char **argv){
 void handle_cmdline_args(int argc, char **argv, struct cmdline_args *cmda){
     //struct cmdline_args cmda;
     static char *scg;
