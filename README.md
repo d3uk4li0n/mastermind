@@ -18,8 +18,8 @@ A misplaced piece is a piece that is present in the secret code butthat is not i
 
 You must read the player's input from the standard input.
 
-Your program will also receive the following parameters:
--c [CODE]: specifies the secret code. If no code is specified, a random code will be generated.
+Your program will also receive the following parameters:  
+-c [CODE]: specifies the secret code. If no code is specified, a random code will be generated.  
 -t [ATTEMPTS]: specifies the number of attempts; by default, the playerhas 10 attempts.
 
 # Examples
