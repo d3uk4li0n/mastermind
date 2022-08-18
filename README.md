@@ -23,24 +23,24 @@ Your program will also receive the following parameters:
 -t [ATTEMPTS]: specifies the number of attempts; by default, the playerhas 10 attempts.
 
 # Examples
->./mastermind -c "0123"
-Will you find the secret code?
----
-Round 0
->1456
-Well placed pieces: 0
-Misplaced pieces: 1
----
-Round 1
->tata
-Wrong input!
->4132
-Well placed pieces: 1
-Misplaced pieces: 2
----
-Round 2
->0123
-Congratz! You did it!
+>./mastermind -c "0123"  
+Will you find the secret code?  
+---  
+Round 0  
+>1456  
+Well placed pieces: 0  
+Misplaced pieces: 1  
+---  
+Round 1   
+>tata  
+Wrong input!  
+>4132  
+Well placed pieces: 1  
+Misplaced pieces: 2  
+---  
+Round 2  
+>0123  
+Congratz! You did it!  
 
 # Technical information
 
